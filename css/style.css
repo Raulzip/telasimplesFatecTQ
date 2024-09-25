@@ -1,0 +1,81 @@
+/* Reset básico */
+body, h1, h2, div, input, textarea {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../font/poppins/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-size: cover; /* Faz com que a imagem cubra toda a tela */
+    color: #000;
+    height: 100vh;
+}
+
+.header {
+    background-color: #a40000;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    border-radius: 0 0 10px 10px; /* Arredonda minimamente as pontas inferiores */
+}
+
+.logo {
+    max-width: 130px; /* Aumenta a logo */
+}
+
+.game-title {
+    font-size: 40px; /* Aumenta o tamanho do título */
+    font-weight: bold;
+    text-align: center;
+    margin: 60px 0 40px 0; /* Ajusta a margem */
+}
+
+.score-section, .best-scores-section {
+    margin: 30px 0; /* Move as seções mais para baixo */
+    width: 100%; /* Garante que a largura ocupe toda a tela */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score-box, .best-scores-box {
+    background-color: #333;
+    width: 30%; /* Mantém a largura reduzida dos inputs */
+    padding: 10px;
+    color: #fff;
+    border: none;
+    margin: 10px 0;
+    border-radius: 5px; /* Arredonda minimamente os cantos dos inputs */
+}
+
+.score-box {
+    height: 120px; /* Mantém a altura do primeiro input */
+}
+
+.best-scores-box {
+    height: 350px; /* Mantém a altura do textarea */
+    resize: none;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 10px; /* Ajusta a margem inferior da escrita */
+}
+
+
